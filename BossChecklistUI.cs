@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
@@ -144,6 +144,10 @@ namespace BossChecklist.UI
 			new BossInfo("Abomination", DukeFishron + 0.2f, () => BossChecklist.instance.bluemagicLoaded, () => Bluemagic.BluemagicWorld.downedAbomination),
 			new BossInfo("Spirit of Purity", Moonlord + 0.9f, () => BossChecklist.instance.bluemagicLoaded, () => Bluemagic.BluemagicWorld.downedPuritySpirit),
 			new BossInfo("Spirit of Chaos", Moonlord + 1.9f, () => BossChecklist.instance.bluemagicLoaded, () => Bluemagic.BluemagicWorld.downedChaosSpirit),
+
+			// Joost
+			new BossInfo("Jumbo Cactuar", Moonlord + 0.7f, () => BossChecklist.instance.joostLoaded, () => JoostMod.JoostWorld.downedJumboCactuar),
+			new BossInfo("SA-X", Moonlord + 0.8f, () => BossChecklist.instance.joostLoaded, () => JoostMod.JoostWorld.downedSAX),
 
 			// Calamity -- Looks like some bosses are still WIP?
 			new BossInfo("Desert Scourge", SlimeKing + .5f, () => BossChecklist.instance.calamityLoaded, () => CalamityMod.CalamityWorld.downedDesertScourge),

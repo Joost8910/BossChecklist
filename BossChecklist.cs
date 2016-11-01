@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Terraria;
 using Terraria.ModLoader;
 using System.Collections.Generic;
@@ -20,8 +20,9 @@ namespace BossChecklist
 		internal bool thoriumLoaded;
 		internal bool bluemagicLoaded;
 		internal bool sacredToolsLoaded;
-		// Mods that need fixes
 		internal bool calamityLoaded;
+		internal bool joostLoaded;
+		// Mods that need fixes
 		internal bool crystiliumLoaded;
 		internal bool tremorLoaded;
 		internal bool pumpkingLoaded;
@@ -94,6 +95,7 @@ namespace BossChecklist
 		{
 			try
 			{
+				joostLoaded = ModLoader.GetMod("JoostMod") != null;
 				thoriumLoaded = ModLoader.GetMod("ThoriumMod") != null;
 				bluemagicLoaded = ModLoader.GetMod("Bluemagic") != null;
 				calamityLoaded = ModLoader.GetMod("CalamityMod") != null;
